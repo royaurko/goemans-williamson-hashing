@@ -11,7 +11,7 @@ if __name__ == '__main__':
     b=float(input('Upperbound on entries:'))
     temp=[]
     tempstr=""
-    f=open('text','w')
+    f=open('data','w')
     for i in range(0, n):
         for j in range(0,k):
             temp.append(random.uniform(a, b))
