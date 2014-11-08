@@ -24,7 +24,9 @@ with the probability of collision being:
 
 	(1-a/\pi)^{log^2(n)} 
 
-which is approximately exponentially small in n if the data is "not too similar".
+where a is the angle between the two vectors. This is approximately exponentially
+
+small in n if the data is "not too similar".
 
 The generate-example.py generates a file (by default named text) with random vectors.
 
