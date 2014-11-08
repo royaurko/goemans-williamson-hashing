@@ -36,4 +36,4 @@ outputs the number of collisions that were observed on the data. A sample data f
 
 included in the repository. 
 
-Reference: <a href='http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf'>Similarity estimation techniques from rounding algorithms</a>, M Charikar. 
+Reference: http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf 
