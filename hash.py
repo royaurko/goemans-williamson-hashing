@@ -29,7 +29,7 @@ def hash(arrayvec, k, n):
 
 
 def collision(arrayvec,hashval):
-#    """Count number of collisions"""
+     """Count number of collisions"""
      flag=0
      counter=0
      for i in range(0,len(arrayvec)):
