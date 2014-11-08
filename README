@@ -32,4 +32,6 @@ The generate-example.py generates a file (by default named data) with random vec
 
 The hash.py uses this hashing scheme to hash it to a file of your choosing. It also 
 
-outputs the number of collisions that were observed on the data. 
+outputs the number of collisions that were observed on the data. A sample data file is
+
+included in the repository. 
