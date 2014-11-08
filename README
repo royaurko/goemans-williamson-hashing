@@ -18,7 +18,7 @@ frequency vector). The Goemans-Williamson rounding technique samples a n-variate
 
 Gaussian x (n being the dimension of the data) and rounds the data vector v to 1
 
-if <v,x> >= 0 and to 0 otherwise. Here we map an n-bit vector to a log^2(n) vector
+if <v,x> >= 0 and to 0 otherwise. Here we map an n-bit vector to a log^2(n) bit vector
 
 with the probability of collision being:
 
