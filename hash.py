@@ -2,6 +2,7 @@ import numpy as np
 import operator
 
 def generatekey(k,n):
+    """Generate the key by sampling from a multivariate Gaussian"""
     mean=[0 for x in range(0, n)]
     cov=np.matrix(np.identity(n), copy=False)
     key=[]
@@ -26,14 +27,26 @@ def hash(arrayvec, k, n):
     result={tempkey:tempmap}
     return result
 
-#def collision(arrayv,hashval):
-#    """Count number of collisions in a hash"""
-#    flag=0
-#    d=dict(zip(arrayv,hashval))
-#    for x in d:
+
+def collision(arrayvec,hashval):
+#    """Count number of collisions"""
+     flag=0
+     counter=0
+     for i in range(0,len(arrayvec)):
+         for j in range(0,i):
+             if arrayvec[i]==arrayvec[j]:
+                 flag=1
+                 break
+         if flag==1:
+             continue
+         else:
+             for j in range(0,len(arrayvec)):
+                 if arrayvec[j]!=arrayvec[j] and hashval[i]==hashval[j]:
+                     counter=counter+1
+     return counter
+
 
 if __name__ == '__main__':
-    collisions=0
     fname1=input("Please enter input filename:")
     fname2=input("Please enter output filename:")
     f=open(fname1,'r')
@@ -50,10 +63,11 @@ if __name__ == '__main__':
     k=int(np.log2(n))
     z=hash(x,k,n)
     for i in z:
-        hashval='\n'.join(z[i])
-    for i in range(0,len(hashval)):
-        g.write(hashval[i])
-    #print("Number of collisions:",collisions(x,hashval))
+        hashval=z[i]
+        hashvalstr='\n'.join(z[i])
+    for i in range(0,len(hashvalstr)):
+        g.write(hashvalstr[i])
+    print('Number of collisions=',collision(x,hashval))
     f.close()
     g.close()
 
