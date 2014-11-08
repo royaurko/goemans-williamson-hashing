@@ -30,4 +30,6 @@ small in n if the data is "not too similar".
 
 The generate-example.py generates a file (by default named text) with random vectors.
 
-The hash.py uses this hashing scheme to hash it to a file of your choosing. 
+The hash.py uses this hashing scheme to hash it to a file of your choosing. It also 
+
+outputs the number of collisions that were observed on the data. 
