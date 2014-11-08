@@ -1,8 +1,8 @@
-==================================================================
+===================================================================
 
-Python implementation of a simple Locally Sensitive Hashing
+Python implementation of a simple Locally Sensitive Hashing scheme
 
-==================================================================
+===================================================================
 
 This is a python implementation of a locally sensitive hashing scheme
 
