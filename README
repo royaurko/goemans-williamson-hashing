@@ -35,3 +35,5 @@ The hash.py uses this hashing scheme to hash it to a file of your choosing. It a
 outputs the number of collisions that were observed on the data. A sample data file is
 
 included in the repository. 
+
+Reference: <a href='http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf'>Similarity estimation techniques from rounding algorithms</a>, M Charikar. 
