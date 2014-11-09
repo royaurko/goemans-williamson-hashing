@@ -38,7 +38,7 @@ The hash.py uses this hashing scheme to hash it to a file of your choosing. It a
 
 outputs the number of collisions that were observed on the data where the number is 
 
-defined to be the sum over all occupied buckets of (the number of vectors in the bucket-1).
+defined to be the sum of (the number of vectors in the bucket-1) over all occupied buckets.
 
 A sample data file is also included in the repository. 
 
