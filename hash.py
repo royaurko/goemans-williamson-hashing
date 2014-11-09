@@ -59,6 +59,8 @@ if __name__ == '__main__':
         hashvalstr = '\n'.join(z[i])
     for i in range(0, len(hashvalstr)):
         g.write(hashvalstr[i])
-    print('Number of collisions=', collision(x, hashval))
+    c = collision(x, hashval)
+    print('Number of collisions=', c)
+    print('Fraction of collisions=', c / len(x))
     f.close()
     g.close()
