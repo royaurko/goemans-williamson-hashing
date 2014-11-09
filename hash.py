@@ -31,20 +31,10 @@ def hash(arrayvec, k, n):
 
 def collision(arrayvec, hashval):
     """Count number of collisions"""
-    flag = 0
-    counter = 0
-    for i in range(0, len(arrayvec)):
-        for j in range(0, i):
-            if arrayvec[i] == arrayvec[j]:
-                flag = 1
-                break
-        if flag == 1:
-            continue
-        else:
-            for j in range(0, len(arrayvec)):
-                if arrayvec[i] != arrayvec[j] and hashval[i] == hashval[j]:
-                    counter += 1
-    return counter
+    x = len(set(hashval))
+    arrayvec = map(tuple, arrayvec)
+    y = len(set(arrayvec))
+    return y - x
 
 
 if __name__ == '__main__':
