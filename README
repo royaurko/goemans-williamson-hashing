@@ -22,11 +22,15 @@ if <v,x> >= 0 and to 0 otherwise. Here we map an n-bit vector to a log^2(n) bit 
 
 with the probability of collision being:
 
-	(1-a/\pi)^{log^2(n)} 
+	(1-a/\pi)^{(log n)^2} 
 
-where a is the angle between the two vectors. This is approximately super-polynomially
+where a is the angle between the two vectors. Note that if the machine precision is k
 
-small in n if the data is "not too similar".
+(typically a constant in n) then the probability of collision is atleast
+
+	(1-1/(2^k*\pi))^{(log n)^2}
+
+which is asymptotically inverse super-polynomial in n.
 
 The generate-example.py generates a file (by default named data) with random vectors.
 
