@@ -24,7 +24,7 @@ with the probability of collision being:
 
 	(1-a/\pi)^{log^2(n)} 
 
-where a is the angle between the two vectors. This is approximately exponentially
+where a is the angle between the two vectors. This is approximately super-polynomially
 
 small in n if the data is "not too similar".
 
