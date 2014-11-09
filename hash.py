@@ -42,7 +42,7 @@ def collision(arrayvec, hashval):
             continue
         else:
             for j in range(0, len(arrayvec)):
-                if arrayvec[j] != arrayvec[j] and hashval[i] == hashval[j]:
+                if arrayvec[i] != arrayvec[j] and hashval[i] == hashval[j]:
                     counter += 1
     return counter
 
