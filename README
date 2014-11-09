@@ -1,10 +1,10 @@
 ===================================================================
 
-Python implementation of a simple Locally Sensitive Hashing scheme
+Python 3 implementation of a simple Locally Sensitive Hashing scheme
 
 ===================================================================
 
-This is a python implementation of a locally sensitive hashing scheme
+This is a python 3 implementation of a locally sensitive hashing scheme
 
 that makes use of the Goemans-Williamson rounding technique for approximating
 
