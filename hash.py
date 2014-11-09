@@ -42,7 +42,7 @@ def collision(arrayvec,hashval):
          else:
              for j in range(0,len(arrayvec)):
                  if arrayvec[j]!=arrayvec[j] and hashval[i]==hashval[j]:
-                     counter=counter+1
+                     counter+=1
      return counter
 
 
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     f=open(fname1,'r')
     g=open(fname2,'w')
     x=[y.strip('\n').rstrip(' ') for y in list(f)]
-    x=[[int(z) for z in y.split(' ')] for y in x]
+    x=[[float(z) for z in y.split(' ')] for y in x]
     n=0
     for i in x:
         if len(i)>n:
@@ -61,6 +61,7 @@ if __name__ == '__main__':
         if len(i)<n:
             i.extend([0]*(n-len(i)))
     k=int(np.log2(n))
+    k=k**2
     z=hash(x,k,n)
     for i in z:
         hashval=z[i]
