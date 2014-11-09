@@ -36,8 +36,10 @@ The generate-example.py generates a file (by default named data) with random vec
 
 The hash.py uses this hashing scheme to hash it to a file of your choosing. It also 
 
-outputs the number of collisions that were observed on the data. A sample data file is
+outputs the number of collisions that were observed on the data where the number is 
 
-included in the repository. 
+defined to be the sum over all occupied buckets of (the number of vectors in the bucket-1).
+
+A sample data file is also included in the repository. 
 
 Reference: http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf 
