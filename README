@@ -6,7 +6,7 @@ Python 3 implementation of a simple Locally Sensitive Hashing scheme
 
 This is a python 3 implementation of a locally sensitive hashing scheme
 
-that makes use of the Goemans-Williamson rounding technique for approximating
+that makes use of the Goemans-Williamson SDP rounding technique for approximating
 
 MAXCUT. A locally sensitive hashing scheme maps "close" strings to the same 
 
