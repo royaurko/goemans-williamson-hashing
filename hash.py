@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import numpy as np
+import generate_example as ge
 
 
 def generatekey(k, n):
@@ -39,7 +40,12 @@ def collision(arrayvec, hashval):
 
 
 if __name__ == '__main__':
-    fname1 = input("Please enter input filename:")
+    flag = input("Do you need to generate an example?(y/n)")
+    if flag == 'y':
+        ge.generate_example()
+        fname1 = 'data'
+    elif flag == 'n':
+        fname1 = input("Please enter input filename:")
     fname2 = input("Please enter output filename:")
     f = open(fname1, 'r')
     g = open(fname2, 'w')
