@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import numpy as np
 import generate_example as ge
+import convert_text as ct
 
 
 def generatekey(k, n):
@@ -40,12 +41,16 @@ def collision(arrayvec, hashval):
 
 
 if __name__ == '__main__':
-    flag = input("Do you need to generate an example?(y/n)")
+    flag = input("Do you want to generate a random example?(y/n) ")
+    fname1 = 'data'
     if flag == 'y':
         ge.generate_example()
-        fname1 = 'data'
     elif flag == 'n':
-        fname1 = input("Please enter input filename:")
+        flag2 = input("Do you want to hash a text file?(y/n) ")
+        if flag2 == 'y':
+            ct.convert_text()
+        elif flag2 == 'n':
+            fname1 = input("Please enter input filename:")
     fname2 = input("Please enter output filename:")
     f = open(fname1, 'r')
     g = open(fname2, 'w')
