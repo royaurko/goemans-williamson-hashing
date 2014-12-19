@@ -30,7 +30,7 @@ which is asymptotically inverse super-polynomial in n.
 
 #Usage
 
-* The ** convert_text.py ** file converts a text file to its frequency vector and writes to a file named * data *
+* The **convert_text.py** file converts a text file to its frequency vector and writes to a file named * data *
 
 * The ** generate_example.py ** file generates a random collection of vectors to be hashed. One can specify the dimension
 of the data and the number of data points.
