@@ -1,7 +1,8 @@
 #Description 
 
 This is a python 3 implementation of a 
-[Locality Sensitive Hashing (LSH)](http://en.wikipedia.org/wiki/Locality-sensitive_hashingscheme)
+[Locality Sensitive Hashing (LSH)](http://en.wikipedia.org/wiki/Locality-sensitive_hashing)
+scheme 
 that makes use of the 
 [Goemans-Williamson SDP rounding](http://en.wikipedia.org/wiki/Semidefinite_programming#Example_3_.28Goemans-Williamson_MAX_CUT_approximation_algorithm.29)
  technique for approximating MAXCUT. A LSH scheme maps "close" strings to the same 
