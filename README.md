@@ -32,10 +32,10 @@ which is asymptotically inverse super-polynomial in n.
 
 * The **convert_text.py** file converts a text file to its frequency vector and writes to a file named * data *
 
-* The ** generate_example.py ** file generates a random collection of vectors to be hashed. One can specify the dimension
+* The **generate_example.py** file generates a random collection of vectors to be hashed. One can specify the dimension
 of the data and the number of data points.
 
-* The ** hash.py ** file uses this hashing scheme to hash it to a file of your choosing. It also outputs the number
+* The **hash.py** file uses this hashing scheme to hash it to a file of your choosing. It also outputs the number
 of collisions observed. 
 
 A sample data file is also included in the repository. 
